@@ -6,45 +6,49 @@ sidebar_position: 4
 
 Łukasz Lizoń, JS Dev
 
-### Łukasz Lizoń, JS Dev
+### Czym jest portfel kryptowalut
 
-- Jestem Frontend developerem z 7 letnim doświadczeniem
-- Mam niewielkie doświadczenie fullstackowe, ale lubię całościowy pogląd na projekty
-- Od ponad 6 lat pracuję dla J-Labs, obecnie jako team lead jednego z zespołów FedEx
-- Poza pracą interesuję się sportem oraz stolarką
+<h4>Portfel kryptowalut jest to miejsce gdzie przechowywane są klucze prywatne. 
+Nasze środki są przechowywane na konkretnych adresach sieci blockchain, które zostały 
+wygenerowane na podstawie kluczy prywatnych. Jako właściciel kryptowalut należy 
+pamiętać, że to do nas należy pilnowanie klucza prywatnego. Na rynku mamy do 
+wyboru różnego rodzaju portfele kryptowalut:
+</h4>
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- Portfele sprzętowe - fizyczne urządzenia na których są przechowywane klucze prywatne
+  - Ledger
+  - Trezor
+- Portfele software'owe
+  - Aplikacja na telefon 
+  - Aplikacje desktopowe
+  - Portfele przeglądarkowe / sieciowe
+- Inne formy przechowywania kluczy prywatnych
+  - kartka papieru
+  - "zapamiętanie"
 
-### What you'll need
+<div class="row">
+    <div class="col">
+        <img src="/img/metamask.png"/>
+    </div>
+    <div class="col">
+        <img src="/img/coinbase.png"/>
+    </div>
+    <div class="col">
+        <img src="/img/exodus.png"/>
+    </div>
+    <div class="col">
+        <img src="/img/argent.png"/>
+    </div>
+    <div class="col">
+        <img src="/img/twt.webp"/>
+    </div>
+</div>
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Przykładowe portfele software'owe
+- MetaMask
+- Coinbase
+- Exodus
+- Crypto.com
+- TrustWallet 
+- Argent
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
