@@ -96,42 +96,25 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/welcome',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Linki',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/%C5%82ukasz-lizo%C5%84-446799a7/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/lizonlukasz/blockchain-frontend',
+                label: 'Github',
+                href: 'https://github.com/lizonlukasz',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Łukasz Lizoń. Strona zbudowana z użyciem Docusaurus'a.`,
       },
       prism: {
         theme: lightCodeTheme,
