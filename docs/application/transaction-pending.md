@@ -30,7 +30,7 @@ Następnie zmodyfikujmy trochę funkcję odpowiedzialną za tworzenie taska
 };
 ```
 
-oraz oczywiście dołużmy nasz stan do zwrotki hooka
+oraz oczywiście dołóżmy nasz stan do zwrotki hooka
 
 ```typescript
   return {
@@ -40,6 +40,15 @@ oraz oczywiście dołużmy nasz stan do zwrotki hooka
     pendingTransactionsCount,
     completeTask,
 };
+```
+
+należałeby również pobrać ponownie taski jeśli transakcja została zakończona.
+Dodajmy do zależności useEffekta odpowiedzialnego za pobieranie tasków, licznik `pending`:
+
+```typescript
+  useEffect(() => {
+    getTasks();
+  }, [contract, activeAccount, pendingTransactionsCount]);
 ```
 
 Teraz w komponencie `Todo`, przekażmy do tabeli tasków liczbę oczekujących transakcji:
