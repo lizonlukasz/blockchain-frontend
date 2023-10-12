@@ -77,8 +77,13 @@ const config = {
             label: 'Tutorial',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/lizonlukasz/blockchain-frontend',
+            label: 'GitHub Prezentacji',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/lizonlukasz/react-ts-nextui-zustand-boilerplate',
+            label: 'GitHub Projektu',
             position: 'right',
           },
         ],
