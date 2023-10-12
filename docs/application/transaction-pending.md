@@ -19,7 +19,6 @@ Następnie zmodyfikujmy trochę funkcję odpowiedzialną za tworzenie taska
     const addTask = async (task: string) => {
     if (contract) {
         try {
-            await contract.addTask(task);
             const tx = await contract.addTask(task);
             setPendingTransactionsCount((prev) => prev + 1);
             await tx.wait();

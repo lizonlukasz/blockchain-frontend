@@ -51,7 +51,7 @@ const [tasksLoading, setTasksLoading] = useState<boolean>(false);
 ```typescript
   useEffect(() => {
     getTasks();
-}, [contract, activeAccount, pendingTransactionsCount]);
+}, [contract, activeAccount]);
 ```
 
 Na koniec zwróćmy też w hooku stan tak, aby był dostępny na zewnątrz
@@ -71,7 +71,7 @@ potrzebujemy początkowy UI do wyświetlania listy todo. Stwórzmy więc kompone
 import {
   FC, FormEvent, useState,
 } from 'react';
-import { useTodoContract } from './useTodoContract';
+import { useTodoContract } from 'hooks';
 import { PageTitle } from '../../components/PageTitle';
 import { PageWrapper } from '../../components';
 
@@ -91,5 +91,8 @@ export const Todo: FC = () => {
 };
 
 ```
+
+W tym miejscu należałoby też dołożyć widok Todo do routingu, w pliku `main.ts` 
+oraz w nawigacji, `components/Navbar` 
 
 

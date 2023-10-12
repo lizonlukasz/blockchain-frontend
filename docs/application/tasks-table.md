@@ -13,7 +13,7 @@ import { FC } from 'react';
 import {
   Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Checkbox, Chip, Button, Spinner, Skeleton,
 } from '@nextui-org/react';
-import { TaskTableData } from './useTodoContract';
+import { TaskTableData } from 'hooks';
 
 interface TasksTableProps {
   tasks: TaskTableData[];
@@ -36,7 +36,7 @@ const tasksWithPendingRows = (tasks: TaskTableData[], pendingRows: number): Arra
 const isEmpty = (row: TaskTableData | EmptyRow): row is EmptyRow => (row as EmptyRow)?.isEmpty;
 
 export const TasksTable: FC<TasksTableProps> = ({
-  tasks, onComplete, isLoading, pendingRows = 2,
+  tasks, onComplete, isLoading, pendingRows = 0,
 }) => (
   <div className="flex flex-col gap-3">
     <Table

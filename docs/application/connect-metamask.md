@@ -24,7 +24,8 @@ a następnie ustawiamy text przycisku oraz atrybut `disabled` w przypadku jeśli
 
 
 ### Łączęnie z portfelem 
-W pierwszej kolejności dorzućmy klikalny kafelek do łączenia z portfelem oraz hanlder kliknięcia w niego
+W pierwszej kolejności dorzućmy klikalny kafelek do łączenia z portfelem oraz hanlder kliknięcia w niego.
+W komponencie `LoginModal` dodajemy
 
 ```typescript jsx
 const handleWalletConnect = () => undefined;

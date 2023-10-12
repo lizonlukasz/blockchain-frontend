@@ -164,7 +164,7 @@ export const useTodoContract = () => {
 
     useEffect(() => {
         initContract();
-    }, []);
+    }, [activeAccount]);
 
     return {};
 };
